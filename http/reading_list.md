@@ -27,3 +27,11 @@ a. Can ownership be borrowed?
 5. What is **if let** expression?
 6. What is **lifetimes** in Rust?
 
+03/27:
+1. How do we use the **derive attribut**e to implement Debug trait on all types.
+2. What are public associated functions?
+3. What are **copy** and **clone** traits?
+4. How do **read** and **write** traits work for types like TcpStream, Vector, files.
+5. What's the difference between **static** and **dynamic** dispatch in Rust?
+6. How do we create custom traits in Rust for handling static files associated with your frontend.
+7. How do we work with *env variables* in Rust?
