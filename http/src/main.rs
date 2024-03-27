@@ -1,21 +1,15 @@
+use httpmods::Method;
+use httpmods::Request;
+use server::Server;
+
+mod httpmods;
+mod server;
+
 fn main() {
     let server = Server::new("127.0.0.1:8080".to_string());
     server.run();
 }
 
-struct Server {
-    addr: String,
-}
-
-impl Server {
-    fn new(addr: String) -> Self {
-        Server { addr }
-    }
-
-    fn run(self) {
-        println!("Server is listening on {}", self.addr);
-    }
-}
 // HTTP1.1 is L7 protocol and uses TCP.
 // HTTP Server Design:
 // 1. TCP Listener: Since messages are passed over TCP in HTTP1.1, we need
@@ -27,3 +21,9 @@ impl Server {
 // TCP listener and subsequently, the client.
 // The Server will run on a single thread, hence the server will only accept 1 request
 // at a time.
+
+/*
+GET /user?id=10 HTTP/1.1\r\n
+HEADERS \r\n
+BODY
+ */
