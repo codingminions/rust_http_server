@@ -90,24 +90,24 @@ Next you should open up a new tab in any browser client that supports HTTP/1.1 a
 
    Output:
     ```
-    GET /?/test?a=2&b=4&c&d&d=3&d=6 HTTP/1.1
-    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-    Accept-Encoding: gzip, deflate, br, zstd
-    Accept-Language: en-US,en;q=0.9
-    Cache-Control: max-age=0
-    Connection: keep-alive
-    Cookie: _grpcui_csrf_token=l4eNuRFyuAbDe-ZLFCkdQ662wWNZ8zWd6fI33ROYZfI
-    DNT: 1
+    Stream: TcpStream { addr: 127.0.0.1:8080, peer: 127.0.0.1:61173, fd: 4 } OK
+    received a request: GET /?/test?a=2&b=4&c&d&d=3&d=6 HTTP/1.1
     Host: 127.0.0.1:8080
-    Sec-Fetch-Dest: document
-    Sec-Fetch-Mode: navigate
-    Sec-Fetch-Site: none
-    Sec-Fetch-User: ?1
-    Upgrade-Insecure-Requests: 1
-    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Connection: keep-alive
     sec-ch-ua: "Chromium";v="123", "Not:A-Brand";v="8"
     sec-ch-ua-mobile: ?0
     sec-ch-ua-platform: "macOS"
+    DNT: 1
+    Upgrade-Insecure-Requests: 1
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    Sec-Fetch-Site: none
+    Sec-Fetch-Mode: navigate
+    Sec-Fetch-User: ?1
+    Sec-Fetch-Dest: document
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Cookie: _grpcui_csrf_token=l4eNuRFyuAbDe-ZLFCkdQ662wWNZ8zWd6fI33ROYZfI
     ``` 
 
 ### Provisions covered for successful parse:
